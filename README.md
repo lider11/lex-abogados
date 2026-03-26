@@ -5,6 +5,7 @@ Sitio web para firma legal con **React + TailwindCSS** y API en **Node.js + Expr
 ## Requisitos de runtime
 - Node.js **20.x**
 - npm **10+**
+- `.node-version` y `.nvmrc` fijados en `20` para despliegue estable
 
 ## ¿Qué se corrigió?
 Se eliminó la estructura monorepo por workspaces para mejorar compatibilidad con importadores de repositorios (deploy tools que esperan un framework en la raíz del proyecto).
