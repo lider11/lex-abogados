@@ -1,35 +1,28 @@
 # lex-abogados
 
-Sitio web para firma legal con **React + TailwindCSS** y API en **Node.js + Express**.
+Sitio web para firma legal con **Next.js (React + Node.js)** y **TailwindCSS**.
 
 ## Requisitos de runtime
-- Node.js **20.x**
+- Node.js **22.x**
 - npm **10+**
-- `.node-version` y `.nvmrc` fijados en `20` para despliegue estable
-- `volta` en `package.json` y `.npmrc` (`engine-strict=true`) para evitar despliegues con Node incorrecto
+- `.node-version` y `.nvmrc` fijados en `22`
 
-## ¿Qué se corrigió?
-Se eliminó la estructura monorepo por workspaces para mejorar compatibilidad con importadores de repositorios (deploy tools que esperan un framework en la raíz del proyecto).
-
-Ahora el framework frontend está en la raíz:
-- `index.html`
-- `src/`
-- `vite.config.js`
-- `tailwind.config.js`
-
-Y el backend queda en:
-- `backend/server.js`
+## Estructura compatible para importación
+- `app/` (App Router de Next.js)
+- `app/api/contact/route.js`
+- `app/api/health/route.js`
+- `next.config.mjs`
+- `package.json`
 
 ## Scripts
 ```bash
 npm install
-npm run dev      # Frontend (Vite)
-npm run dev:api  # Backend (Express)
+npm run dev
 npm run build
-npm run preview
-npm run start    # Backend en modo normal
+npm run start
 ```
 
 ## URLs
-- Frontend: `http://localhost:5173`
-- API: `http://localhost:4000`
+- Web: `http://localhost:3000`
+- API Health: `http://localhost:3000/api/health`
+- API Contact: `http://localhost:3000/api/contact`
