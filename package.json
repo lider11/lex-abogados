@@ -1,8 +1,14 @@
 {
   "name": "lex-abogados",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
+  "main": "backend/server.js",
+  "packageManager": "npm@10",
+  "engines": {
+    "node": "20.x",
+    "npm": ">=10"
+  },
   "scripts": {
     "dev": "vite",
     "dev:api": "node --watch backend/server.js",
