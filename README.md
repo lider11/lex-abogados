@@ -12,8 +12,8 @@ Sitio web para firma legal con **Next.js (React + Node.js)** y **TailwindCSS**.
 - `app/api/contact/route.js`
 - `app/api/health/route.js`
 - `next.config.mjs`
-- `postcss.config.cjs`
-- `tailwind.config.cjs`
+- `postcss.config.js`
+- `tailwind.config.js`
 - `package.json`
 
 ## Scripts
