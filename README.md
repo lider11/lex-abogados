@@ -1,25 +1,29 @@
 # lex-abogados
 
-Landing web para firma legal construida con **React + TailwindCSS** en frontend y **Node.js + Express** en backend.
+Sitio web para firma legal con **React + TailwindCSS** y API en **Node.js + Express**.
 
-## Stack
-- Frontend: React (Vite), TailwindCSS.
-- Backend: Node.js, Express, CORS.
+## ¿Qué se corrigió?
+Se eliminó la estructura monorepo por workspaces para mejorar compatibilidad con importadores de repositorios (deploy tools que esperan un framework en la raíz del proyecto).
 
-## Estructura
-- `frontend/`: sitio web principal.
-- `backend/`: API sencilla para contacto y healthcheck.
+Ahora el framework frontend está en la raíz:
+- `index.html`
+- `src/`
+- `vite.config.js`
+- `tailwind.config.js`
 
-## Ejecutar en local
+Y el backend queda en:
+- `backend/server.js`
+
+## Scripts
 ```bash
 npm install
-npm run dev
+npm run dev      # Frontend (Vite)
+npm run dev:api  # Backend (Express)
+npm run build
+npm run preview
+npm run start    # Backend en modo normal
 ```
 
+## URLs
 - Frontend: `http://localhost:5173`
 - API: `http://localhost:4000`
-
-## Build
-```bash
-npm run build
-```
