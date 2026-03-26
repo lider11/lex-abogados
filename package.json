@@ -2,10 +2,9 @@
   "name": "lex-abogados",
   "private": true,
   "version": "2.0.0",
-  "type": "module",
   "packageManager": "npm@10",
   "engines": {
-    "node": "22.x"
+    "node": ">=20"
   },
   "scripts": {
     "dev": "next dev",
@@ -14,7 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.33",
+    "next": "^14.2.35",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },

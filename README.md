@@ -3,7 +3,7 @@
 Sitio web para firma legal con **Next.js (React + Node.js)** y **TailwindCSS**.
 
 ## Requisitos de runtime
-- Node.js **22.x**
+- Node.js **>=20**
 - npm **10+**
 - `.node-version` y `.nvmrc` fijados en `22`
 
@@ -12,6 +12,8 @@ Sitio web para firma legal con **Next.js (React + Node.js)** y **TailwindCSS**.
 - `app/api/contact/route.js`
 - `app/api/health/route.js`
 - `next.config.mjs`
+- `postcss.config.cjs`
+- `tailwind.config.cjs`
 - `package.json`
 
 ## Scripts
